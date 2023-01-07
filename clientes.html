@@ -1,21 +1,36 @@
-<div class="col-12 col-xl-3 col-lg-4 offset-lg-1 position-relative h-100 mt-5 mt-lg-0">
-    <div class="figures-holder">
-        <div class="figure figure-1"><img class="shadow" src="assets/images/venue/venue-1.jpg" alt="">
+<div class="slide">
+    <div class="slide-inner">
+        <input class="slide-open" type="radio" id="slide-1" 
+              name="slide" aria-hidden="true" hidden="" checked="checked">
+        <div class="slide-item">
+            <img src="https://www.migueltroyano.com/wp-content/uploads/2020/10/embeddingApi_7.jpg">
         </div>
-        <div class="figure figure-2"><img class="shadow" src="assets/images/venue/venue-2.jpg" alt="">
+        <input class="slide-open" type="radio" id="slide-2" 
+              name="slide" aria-hidden="true" hidden="">
+        <div class="slide-item">
+            <img src="https://www.migueltroyano.com/wp-content/uploads/2020/09/postgres_copy.png">
         </div>
-        <div class="figure figure-3"><img class="shadow" src="assets/images/venue/venue-3.jpg" alt="">
+        <input class="slide-open" type="radio" id="slide-3" 
+              name="slide" aria-hidden="true" hidden="">
+        <div class="slide-item">
+            <img src="https://www.migueltroyano.com/wp-content/uploads/2020/09/excel_guardar_como_csv.jpg">
         </div>
-        <div class="figure figure-4"><img class="shadow" src="assets/images/venue/venue-4.jpg" alt="">
-        </div>
+        <label for="slide-3" class="slide-control prev control-1">‹</label>
+        <label for="slide-2" class="slide-control next control-1">›</label>
+        <label for="slide-1" class="slide-control prev control-2">‹</label>
+        <label for="slide-3" class="slide-control next control-2">›</label>
+        <label for="slide-2" class="slide-control prev control-3">‹</label>
+        <label for="slide-1" class="slide-control next control-3">›</label>
+        <ol class="slide-indicador">
+            <li>
+                <label for="slide-1" class="slide-circulo">•</label>
+            </li>
+            <li>
+                <label for="slide-2" class="slide-circulo">•</label>
+            </li>
+            <li>
+                <label for="slide-3" class="slide-circulo">•</label>
+            </li>
+        </ol>
     </div>
-    <!--//figures-holder-->
-    <a class="btn btn-ghost" href="index.html">Search Hotels</a>
-
-
-
-
-
-
-
-    
+</div>
