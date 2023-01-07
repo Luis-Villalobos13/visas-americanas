@@ -2,7 +2,7 @@ document.querySelector("#submit").addEventListener("click", e => {
   e.preventDefault();
 
   //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
-  const telefono = "9513429625";
+  const telefono = "9511152272";
 
   const cliente = document.querySelector("#cliente").value;
   const fecha = document.querySelector("#fecha").value;
@@ -16,13 +16,13 @@ document.querySelector("#submit").addEventListener("click", e => {
   const url = `https://api.whatsapp.com/send?phone=${telefono}&text=
 		*CITA VISA AMERICANA*%0A
 		*Programación de cita*%0A%0A
-		*Nombre*%0A
+		*Nombre:*%0A
 		${cliente}%0A
-		*Fecha de cita*%0A
+		*Fecha de cita:*%0A
 		${fecha}%0A
-		*Hora de cita*%0A
+		*Hora de cita:*%0A
 		${hora}%0A
-		*Oficina de cita*%0A
+		*Oficina de cita:*%0A
 		${oficina}%0A`;
 
   if (cliente === "" || fecha === "" || hora === "") {
@@ -32,7 +32,7 @@ document.querySelector("#submit").addEventListener("click", e => {
   }
   resp.classList.remove("fail");
   resp.classList.add("send");
-  resp.innerHTML = `Se ha enviado tu cita ${cliente}`;
+  resp.innerHTML = `Se han enviado tus datos ${cliente}`;
 
   window.open(url);
 });
