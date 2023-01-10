@@ -2,7 +2,7 @@ document.querySelector("#submit").addEventListener("click", e => {
   e.preventDefault();
 
   //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
-  const telefono = "9511152272";
+  const telefono = "951268900";
 
   const cliente = document.querySelector("#cliente").value;
   const fecha = document.querySelector("#fecha").value;
@@ -14,7 +14,7 @@ document.querySelector("#submit").addEventListener("click", e => {
   resp.classList.remove("send");
 
   const url = `https://api.whatsapp.com/send?phone=${telefono}&text=
-		*CITA VISA AMERICANA*%0A
+		*CITA PROGRAMADA*%0A
 		*Programación de cita*%0A%0A
 		*Nombre:*%0A
 		${cliente}%0A
